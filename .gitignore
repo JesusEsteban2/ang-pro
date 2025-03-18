@@ -31,10 +31,10 @@ yarn-error.log
 # Miscellaneous
 /.angular/cache
 .sass-cache/
-connect.lock
-coverage
+/connect.lock
+/coverage
 /libpeerconnection.log
-testem.log
+/testem.log
 /typings
 
 # System files

@@ -32,7 +32,6 @@ export class LoginComponent {
     email: '',
     password: '',
   };
-
   userService = inject(UserService);
 
   onSubmit() {

@@ -63,4 +63,10 @@ export class UserService {
       console.log('User', this._currentUser);
     }
   }
+
+  register(data) {
+    console.log(data);
+    const url = this.url + '/register';
+    this.httpClient.post<ApiResponse>(url, data).pipe(map((r) => r.results[0]));
+  }
 }
