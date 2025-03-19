@@ -20,6 +20,11 @@ export class StateService {
     return this.films;
   }
 
+  getFilm(id: string) {
+    const film = this.films().find((fil) => fil.id === id);
+    return film;
+  }
+
   deleteFilm(id: string) {
     this.repo.deleteFilm(id).subscribe({
       next: () => {
@@ -49,8 +54,8 @@ export class StateService {
           this._films().map((f) =>
             f.id === film.id
               ? { ...f, title: film.title, releaseYear: film.releaseYear }
-              : f,
-          ),
+              : f
+          )
         );
       },
       error: (error) => {

@@ -1,10 +1,11 @@
 import { Component, inject, input } from '@angular/core';
 import { Film } from '../../types/film';
 import { StateService } from '../../services/state.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'cas-film',
-  imports: [],
+  imports: [RouterModule],
   template: `
     <div>
       <strong>{{ film().title }}</strong> ({{ film().releaseYear }})

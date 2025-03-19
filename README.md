@@ -63,3 +63,12 @@ formData = new FormGroup();
 FormControls: Objetos que representan objetos de formulario. Input, checkbox, select etc.
 FormArray: Array de FormControls.
 FormGroup: Objeto que contiene los 2 objetos anteriores.
+
+convención un observable de una variable, se llama con el mismo nombre terminado en dolar $
+
+    film
+    film$
+
+    of: convierte en observable.
+
+    Angular @let variable = (variable$ | async)![0] saca la suscripción, en el código HTML.

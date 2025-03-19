@@ -17,6 +17,13 @@ export const routes: Routes = [
     data: { label: 'Films' },
   },
   {
+    path: 'film/:id',
+    loadComponent: () =>
+      import('./films/components/film.detail/film.detail.component'),
+    title: 'Film Detail | Angular Demo',
+    //data: { label: 'Details' },
+  },
+  {
     path: 'about',
     loadComponent: () => import('./about/about.component'),
     title: 'About | Angular Demo',
