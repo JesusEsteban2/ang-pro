@@ -74,3 +74,8 @@ convención un observable de una variable, se llama con el mismo nombre terminad
     Angular @let variable = (variable$ | async)![0] saca la suscripción, en el código HTML.
 
 https://www.freecodecamp.org/espanol/news/gitting-things-done-una-guia-visual-y-practica-para-git-libro-completo/
+
+Git Hub Action.
+
+Personalizada en YML
+Crear carpeta /.github/workflows/main.yml
